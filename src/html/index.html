@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Clarity demo app</title>
+  <link rel="shortcut icon" href="#">
+
+  <style>
+    iframe {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      border: 0;
+    }
+
+    #header {
+      height: 100px;
+      overflow: hidden;
+    }
+
+    #header div {
+      font-size: 8px;
+    }
+
+    #header div span {
+      border: 2px solid #CCC;
+      margin: 5px;
+      padding: 3px;
+      background: #CCC;
+    }
+
+    #header div span.visible, #header div span.clicked {
+      background: lightgreen;
+      border-color: lightgreen;
+    }
+
+    #header div span.clicked {
+      border-color: green;
+    }
+
+    ul {
+      list-style: none;
+      margin: 15px auto 10px;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+      margin-left: 10px;
+      font-size: 6px;
+    }
+
+    ul li h2 {
+      width: 100%;
+      text-align: center;
+      height: 20px;
+      margin: 0;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 5px;
+      background: green;
+      color: white;
+    }
+
+    ul li h2 span {
+      font-size: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+  <div id="header"></div>
+  <iframe id="clarity" title="Clarity Inspector" scrolling="no"></iframe>
+  <script src="../js/panel.js" type="module"></script>
+</body>
+
+</html>
